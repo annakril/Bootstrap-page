@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 62.5%;
+	margin-top: 50px;
+	}
+
+.container-fluid .row-margin {
+	margin-left: 0;
+	margin-right: 0;	
+}
+
+/*NAV*/
+nav .dropdown-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+
+nav .dropdown-inverse > li > a {
+	color: #9d9d9d;
+}
+
+nav .dropdown-inverse > li > a:hover {
+	color: #FFF;
+	background-color: transparent;
+}
+
+/*HEADER*/
+header {
+	margin-bottom: 10px;
+}
+
+header .carousel {
+	background-color: #222;
+}
+
+header .carousel-inner > .item {
+	height: 80vh;
+	background-size: cover;
+}
+
+header .carousel-inner > .item > img {
+	margin: 0 auto;
+	width: 100%;
+	height: 80vh;
+}
+
+header .carousel-caption h2 {
+	font-size: 3rem;
+	text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+
+header .carousel-caption h2 small,
+header .carousel-caption p {
+	color: #FFF;
+	text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+
+header .carousel-caption p {
+	font-size: 2.5rem;
+}
+
+/*TITLE*/
+main aside h2 {
+	font-family: 'Jim Nightshade', cursive;
+	font-size: 5rem;
+	margin-bottom: 20px;
+	height: 30vh;
+	line-height: 30vh;
+}
+
+/*GALLERY*/
+#gallery .container-fluid {
+	padding: 0;
+}
+
+#gallery .container-fluid img {
+	transition: 300ms;
+}
+
+#gallery .container-fluid img:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#gallery {
+	margin-bottom: 65px;
+}
+
+/*TABY*/
+#taby {
+	margin-bottom: 60px;
+}
+
+/*MEDIA OBJECT*/
+.media img {
+	width: 100%;
+}
+
+.media {
+	margin-bottom: 35px;
+}
+
+/*TABLE*/
+.spis-tabela h3 {
+	margin-bottom: 35px;
+}
+
+.spis-tabela {
+	margin-bottom: 35px;
+}
+
+/*FORM*/
+#form-contact {
+	background-color: #aba9a9;
+	color: #FFF;
+	padding: 10px 0;
+}
+
+#form-contact > .container {
+	margin-bottom: 25px;
+}
+
+#form-contact .btn-group-sm > .btn, .btn-sm {
+	margin-top: 15px;
+}
+
+/*THUMBNAIL*/
+.second-gallery img {
+	height: 200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+/*MODAL*/
+#myModal .myTitle,
+#myModal .myBody {
+	color: #000;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #222;
+	padding: 10px 0;
+	height: 40px;
+}
+
+footer p {
+	color: #FFF;
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+/*MEDIA QUERY*/
+@media(max-width: 1200px) {
+	/*NAV*/
+	nav .dropdown-inverse > li > a:hover {
+		color: #9d9d9d;
+	}
+
+
+	/*GALLERY*/
+	#gallery img {
+		width: 100%;
+	}
+
+	#gallery .img-rounded {
+		border-radius: 0;
+	}
+
+	#gallery .img-responsive {
+		display: inline-block;
+	}
+
+	#gallery [class*="col-"] {
+		padding: 0;
+	}
+
+	#gallery .container-fluid img {
+		transition: 0ms;
+	}
+
+	#gallery .container-fluid img:hover {
+		opacity: 1;
+	}
+
+	#gallery .row > div:nth-child(3n) {
+		clear: both;
+	}
+
+	.second-gallery {
+		margin: 0 150px;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 768px) {
+	header h1 {
+		font-size: 4rem;
+	}
+
+	nav ul li {
+		border-bottom: 1px solid #3d3d3d;
+	}
+
+	nav ul li:last-child {
+		border-bottom: none;
+	}
+
+	nav .dropdown-inverse {
+		text-align: center;
+	}
+
+	nav .dropdown-inverse > li > a {
+		transform: translateX(-1.5%);
+	}
+
+	main aside h2 {
+		font-size: 3.5rem;
+		height: 20vh;
+		line-height: 20vh;
+	}
+
+	.second-gallery {
+		text-align: center;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	.media img {
+		margin-bottom: 20px;
+	}
+
+	.media {
+		margin-bottom: 20px;
+	}
+}
